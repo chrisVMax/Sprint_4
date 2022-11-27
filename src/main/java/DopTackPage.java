@@ -17,3 +17,4 @@ public class DopTackPage {
         driver.findElement(orderPage.yandex).click();
     }
 }
+

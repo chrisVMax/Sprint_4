@@ -16,7 +16,7 @@ public class OrderTest {
     private String address = "Мой тестовый адрес";
     private By station = By.xpath(".//button[@value='1']"); //Станция метро Бульвар Рокоссовского
     private String telephone = "79990000000";
-    private String comment = "Тествоый комментарий";
+    private String comment = "Тестовый комментарий";
     private String expectedTextSuccessOrder = "Заказ оформлен";
 
     @Test
@@ -49,6 +49,7 @@ public class OrderTest {
         String actualTextSuccessOrder = orderPage.getTextOfWindowOfSuccessfulOrder();
         MatcherAssert.assertThat("Статус заказа отличается", actualTextSuccessOrder, startsWith(expectedTextSuccessOrder));
     }
+
 
     @Test
     public void orderNextMonth() {
