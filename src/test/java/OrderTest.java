@@ -70,7 +70,6 @@ public class OrderTest {
         String actualTextSuccessOrder = orderPage.getTextOfWindowOfSuccessfulOrder();
         MatcherAssert.assertThat("Статус заказа отличается", actualTextSuccessOrder, startsWith(expectedTextSuccessOrder));
     }
-
     @After
     public void teardown() {
         driver.quit();

@@ -20,7 +20,6 @@ public class DopTackPageTest {
         assertEquals(mainPage.site, orderPage.currentUrl());
     }
 
-
     @Test
     public void DopTackYandex() {
         driver = new ChromeDriver();
